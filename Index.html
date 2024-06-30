@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Ejemplo - Sistema de Gestión</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Café del Sol</div>
+            <button id="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#mesas">Mesas</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#inventario">Inventario</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="active">
+            <h1>Bienvenido al Sistema de Gestión</h1>
+            <p>Selecciona una opción del menú para comenzar.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menú</h2>
+            <div id="menu-items" class="grid-container">
+                <!-- Los ítems del menú se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="mesas">
+            <h2>Gestión de Mesas</h2>
+            <div id="mesas-container" class="grid-container">
+                <!-- Las mesas se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="pedidos">
+            <h2>Gestión de Pedidos</h2>
+            <div id="pedidos-lista">
+                <!-- Los pedidos se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="inventario">
+            <h2>Inventario</h2>
+            <table id="inventario-tabla">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- El inventario se cargará dinámicamente aquí -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reportes">
+            <h2>Reportes y Estadísticas</h2>
+            <div id="reporte-ventas">
+                <h3>Reporte de Ventas</h3>
+                <table id="ventas-tabla">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad Vendida</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- El reporte se cargará dinámicamente aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Café del Sol. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
